@@ -2,6 +2,7 @@
 using namespace std;
 
 string getresult(string a, string b, string c);
+void mostrar(string result);
 int main()
 {
     // ingreso de las tres cadenas
@@ -10,7 +11,7 @@ cin >> str1 >> str2 >> str3;
 // calcular el resultado
  string result = getresult(str1,str2,str3);
  //muestra del resultado
- cout<<result<<endl;
+ mostrar(result);
     return 0;
 }
 
@@ -25,4 +26,7 @@ string getresult(string a,string b,string c){
         minimo=c;
     }
     return minimo;
+}
+void mostrar(string result){
+    cout<<result<<endl;
 }
